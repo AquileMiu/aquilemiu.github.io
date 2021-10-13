@@ -10982,6 +10982,9 @@ a.article-nav-next span {
 .navbar-logo img {
   max-height: 1.75rem;
 }
+.footer {
+  padding: 2rem 1rem 3rem;
+}
 @media screen and (max-width: 768px) {
   footer.footer .level-start {
     text-align: center;
@@ -10994,7 +10997,7 @@ footer.footer .level-end .field {
 @media screen and (max-width: 768px) {
   footer.footer .level-end .field {
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 0.7rem;
   }
 }
 .footer-logo img {
