@@ -102,19 +102,19 @@ head:
     # URL or path to the website's RSS atom.xml
     rss: 
 # Page top navigation bar configurations
-navbar:
-    # Navigation menu items
-    menu:
-        Home: /
-        Archives: /archives
-        Categories: /categories
-        Tags: /tags
-        About: /about
-    # Links to be shown on the right of the navigation bar
-    links:
-        Download on GitHub:
-            icon: fab fa-github
-            url: 'https://github.com/ppoffice/hexo-theme-icarus'
+# navbar:
+#     # Navigation menu items
+#     menu:
+#         Home: /
+#         Archives: /archives
+#         Categories: /categories
+#         Tags: /tags
+#         About: /about
+#     # Links to be shown on the right of the navigation bar
+#     links:
+#         Download on GitHub:
+#             icon: fab fa-github
+#             url: 'https://github.com/ppoffice/hexo-theme-icarus'
 # Page footer configurations
 # footer:
 #     # Links to be shown on the right of the footer section
@@ -270,11 +270,20 @@ widgets:
     -
         # Where should the widget be placed, left sidebar or right sidebar
         position: left
-        type: links
+        type: menu
         # Names and URLs of the sites
+        title: Menu
         links:
-            Hexo: 'https://hexo.io'
-            Bulma: 'https://bulma.io'
+            Home: {/,
+                hide_hostname: true}
+            Archives: {/archives,
+                hide_hostname: true}
+            Categories: {/categories,
+                hide_hostname: true}
+            Tags: {/tags,
+                hide_hostname: true}
+            About: {/about,
+                hide_hostname: true}
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
